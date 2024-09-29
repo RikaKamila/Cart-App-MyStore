@@ -2,6 +2,12 @@ import React, { useState } from 'react';
 import Counter from './Counter';
 
 function CartItem({ product}) {
+    const [quantity, setQuantity] = useState(0);
+
+    const handleQuantityChange = (newQuantity) => {
+      setQuantity(newQuantity);
+      console.log (newQuantity) 
+    }
 
   return (
     <div>
