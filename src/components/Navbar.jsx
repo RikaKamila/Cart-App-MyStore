@@ -3,7 +3,6 @@ import { useSelector } from 'react-redux'
 
 function Navbar() {
     const cart = useSelector(state => state.cart)
-    console.log(cart)
 
   return (
     <div className=" bg-teal-700">

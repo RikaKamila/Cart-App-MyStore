@@ -6,10 +6,15 @@ function Counter({onCountChange}) {
     const dispatch = useDispatch()
     const [count, setCount] = useState(0)
 
+    // const quantityCart = props.quantityCart
+    // const setQuantityCart = props.setQuantityCart
+
     const handleIncrement = () => {
       setCount(count + 1);
       onCountChange(count + 1); 
       dispatch(cartIncrease())
+    // setQuantityCart(quantityCart + 1)
+    
     };
   
     const handleDecrement = () => {
@@ -17,6 +22,8 @@ function Counter({onCountChange}) {
         setCount(count - 1);
         onCountChange(count - 1);
         dispatch(cartDecrease())
+        // setQuantityCart(quantityCart - 1)
+
       }
     };
 
